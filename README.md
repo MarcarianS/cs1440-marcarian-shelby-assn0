@@ -5,7 +5,7 @@
 * [Rubric](instructions/Rubric.md)
 
 
-## Overview
+## Over
 
 Your internship at DuckieCorp will be challenging, but we hope you find your management team and the tools we teach you about to be as helpful as possible during your time with us.
 
