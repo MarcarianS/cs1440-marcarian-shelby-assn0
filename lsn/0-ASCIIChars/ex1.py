@@ -1,6 +1,10 @@
 def listOfChars(intList):
     list = []
     # TODO: Append to characters to `list`
+    listLength = len(intList)
+    for i in range(0, listLength):
+        list.append(chr(intList[i]))
+        i += 1
     return list
 
 

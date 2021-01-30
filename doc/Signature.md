@@ -2,7 +2,7 @@
 
 | Date      | Events
 |-----------|--------------------
-| August 20 | Wrote requirements specification and system analysis
+| January 29 | Read through assignment, figured out how to open lsn in PyCharm.
 | August 21 | Wrote system design; revised requirements and system analysis
 | August 22 | Prototyped drawing a rectangle with turtle; revised software plan
 | August 23 | Initial implementation; main menu and prompts done; turtle draws a few shapes but ultimately "walks" off the screen
