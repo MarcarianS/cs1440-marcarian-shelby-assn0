@@ -2,6 +2,13 @@ def everyOtherWord(sentence):
     result = ""
     # TODO: Make a function that returns a string containing every other word in
     # the given sentence
+    sentenceList = sentence.split()
+    listLength = len(sentenceList)
+    for i in range(0, listLength):
+        if i == 0 or i % 2 == 0:
+            result = result
+        else:
+            result += sentenceList[i] + " "
     return result
 
 if __name__ == '__main__':
@@ -19,4 +26,4 @@ if __name__ == '__main__':
         print(everyOtherWord(sentence).capitalize())
 
     # *Hint Hint* The `split` method on strings may be useful...
-    help(str.split)
+    #help(str.split)

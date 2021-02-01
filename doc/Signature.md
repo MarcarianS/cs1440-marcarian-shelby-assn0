@@ -3,8 +3,8 @@
 | Date      | Events
 |-----------|--------------------
 | January 29 | Read through assignment, figured out how to open lsn in PyCharm.
-| August 21 | Wrote system design; revised requirements and system analysis
-| August 22 | Prototyped drawing a rectangle with turtle; revised software plan
+| January 30 | Worked on lsn 0 and lsn 1
+| January 31 | Worked on lsn 1
 | August 23 | Initial implementation; main menu and prompts done; turtle draws a few shapes but ultimately "walks" off the screen
 | August 24 | Weekend - no work
 | August 25 | Weekend - no work

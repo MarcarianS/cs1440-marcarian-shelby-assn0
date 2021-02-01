@@ -1,6 +1,22 @@
 def cleanSentence(sentence):
     result = []
     # TODO: Add the words *not* starting with `#` to the 'result' list
+    listSplitSentence = sentence.split('#')
+    listLength = len(listSplitSentence)
+    for i in range(0, listLength):
+        if i == 0:
+            if listSplitSentence[i] == "":
+                result = result
+            else:
+                splitAgain = listSplitSentence[i].split()
+                result += splitAgain
+        else:
+            cleanedSentence = listSplitSentence[i].split(None, 1)
+            del cleanedSentence[0]
+            cleanedLength = len(cleanedSentence)
+            for i in range(0, cleanedLength):
+                splitCleanedAgain = cleanedSentence[i].split()
+                result += splitCleanedAgain
     return result
 
 if __name__ == '__main__':
@@ -11,6 +27,7 @@ if __name__ == '__main__':
     "They #do don't think it be that way, but it #don't. do. -The Internet",
     "\"You #always miss 100% #7% of the shots you don't take. -Wayne Gretzky\" -Michael Scott",
     "If #coding debugging is the process of #adding removing software bugs, then programming #debugging must be the process of putting them in. -Edsget Dijkstra",
+    "",
     "Premature optimization #planning is the root of all evil #good in programming. -Tony Hoare"
     ]
 
