@@ -1,7 +1,16 @@
 import os
+import sys
 # from ex1 import getFileSafely
 # If the above import is used, be sure no additional output is printed by
 #   getFileSafely, otherwise the tests will fail.
+def getFilesSafely(path):
+
+    if os.access(path, os.R_OK):
+        fileObj = open(path)
+        return fileObj
+    else:
+        sys.exit(1)
+    pass
 
 def printContents1(file):
     '''
@@ -10,6 +19,7 @@ def printContents1(file):
 
     `file` is an opened file object
     '''
+    print(file.read())
     pass
 
 
@@ -20,6 +30,11 @@ def printContents2(file):
 
     `file` is an opened file object
     '''
+    list = file.readlines()
+    string = ""
+    for i in list:
+        string += i
+    print(string)
     pass
 
 
@@ -36,6 +51,11 @@ def printTwice(filename):
         5:  Close the file
     f.close()
     '''
+    f = getFilesSafely(filename)
+    printContents1(f)
+    f.seek(0)
+    printContents2(f)
+    f.close()
     pass
 
 if __name__ == '__main__':

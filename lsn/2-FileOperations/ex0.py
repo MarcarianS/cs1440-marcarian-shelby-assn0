@@ -11,8 +11,11 @@ def getFileAsString(file):
 def printContentsOfFile(fileName):
     # TODO:
     # 0) Open the file
+    fileObj = open(fileName)
     # 1) Give the file to the `getFileAsString` function
+    print(getFileAsString(fileObj))
     # 2) Close the file
+    fileObj.close()
     pass
 
 if __name__ == '__main__':

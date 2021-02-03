@@ -11,7 +11,7 @@ class ExerciseTests(unittest.TestCase):
         Tests the validity of the output.
             EX: findWords(["keep reject"]) == ["keep"]
         '''
-        input = ["Keep Reject Keep Keep Reject"]
+        input = "Keep Reject Keep Keep Reject"
         expOutput = ["Keep", "Keep", "Keep"]
         self.assertEquals(ex0.findWords(input), expOutput)
 
