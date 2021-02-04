@@ -7,6 +7,6 @@
 | January 31 | Worked on lsn 1
 | February 1 | Worked on lsn 1
 | February 2 | Finished lsn 1 and worked on lsn 2
-| August 25 | Weekend - no work
+| February 3 | Finished lsn 2, updated Plan.md, and completed duckieDecrypter.py
 | August 26 | Initial version scrapped; revised software plan; started over with new plan and fixed the "walking off the screen" bug
 | August 27 | Test cases devised; fixed a bug uncovered by testing process

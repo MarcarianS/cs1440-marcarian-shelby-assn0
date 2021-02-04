@@ -19,7 +19,7 @@ def printContents1(file):
 
     `file` is an opened file object
     '''
-    print(file.read())
+    print(file.read(), end="")
     pass
 
 
